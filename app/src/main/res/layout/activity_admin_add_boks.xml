@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guestwall"
+    android:orientation="vertical"
+    tools:context=".AdminAddBoks">
+
+    <ImageView
+        android:id="@+id/adablogo"
+        android:layout_width="178dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/adabheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@drawable/logo_final" />
+
+    <TextView
+        android:id="@+id/adabheader"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:text="Add Books"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/adabbkname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adablogo" />
+
+    <EditText
+        android:id="@+id/adabbkname"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:ems="10"
+        android:hint="Book Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/adabbkprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adabheader" />
+
+    <EditText
+        android:id="@+id/adabbkprice"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:ems="10"
+        android:hint="Book Price"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/adabbkdetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adabbkname" />
+
+
+    <ProgressBar
+        android:id="@+id/adabpog"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="129dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundGravity="center"
+        android:indeterminateTint="#009bb5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/adabupload"
+        android:layout_width="196dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_button_3"
+        android:text="Upload"
+        app:layout_constraintBottom_toTopOf="@+id/adabpog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/adabbkdetails"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:ems="10"
+
+        android:gravity="start|top"
+        android:hint="About the book(Within 20 words)"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adabbkprice" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:text="COURSE"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/admadcour"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adabbkdetails" />
+
+    <Spinner
+        android:id="@+id/admadcour"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:entries="@array/course"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:text="STREAM"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/adabupload"
+        app:layout_constraintEnd_toStartOf="@+id/admadstream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Spinner
+        android:id="@+id/admadstream"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:entries="@array/stream"
+        app:layout_constraintBottom_toTopOf="@+id/adabupload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/admadcour"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

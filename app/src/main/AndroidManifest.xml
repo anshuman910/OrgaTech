@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skfgi.orgatech">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_final"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_final"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GuestOrderStatus"></activity>
+        <activity android:name=".GuestBuyBooks" />
+        <activity android:name=".GuestMyBooks" />
+        <activity android:name=".GuestNotification" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".AdminMyBooks" />
+        <activity android:name=".AdminAddBoks" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".AdminNotification" />
+        <activity android:name=".AdminProfile" />
+
+        <activity android:name=".Login"/>
+        <activity android:name=".AdminDashboard"/>
+        <activity android:name=".forgot"/>
+        <activity android:name=".forgot2"/>
+        <activity android:name=".guest_profile"/>
+        <activity android:name=".Register"/>
+
+        <activity android:name=".guest_dashboard"/>
+            <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

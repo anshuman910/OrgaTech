@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guest_profile"
+    android:orientation="vertical"
+    android:background="@drawable/guestwall">
+
+
+    <LinearLayout
+        android:id="@+id/guprolay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/guprologo"
+            android:layout_width="166dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/logo_final"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="13dp" />
+        <TextView
+
+            android:layout_width="113dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corner_white"
+            android:foregroundGravity="center"
+            android:text="Profile"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+
+        <ScrollView
+            android:id="@+id/guproscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:id="@+id/guproname"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Full Name"
+                    tools:layout_editor_absoluteY="208dp" />
+
+                <EditText
+                    android:id="@+id/guproemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Email"
+                    tools:layout_editor_absoluteY="239dp" />
+
+                <EditText
+                    android:id="@+id/guproph"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Phone Number"
+                    tools:layout_editor_absoluteY="272dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/guprodob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:foregroundGravity="center"
+                        android:text="D.O.B."
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="33dp"
+                        tools:layout_editor_absoluteY="303dp" />
+
+                    <Button
+                        android:id="@+id/guprodobbtn"
+                        android:layout_width="88dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/cal"
+                        tools:layout_editor_absoluteX="122dp"
+                        tools:layout_editor_absoluteY="306dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/guprogen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:text="Gender"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        tools:layout_editor_absoluteX="33dp"
+                        tools:layout_editor_absoluteY="345dp" />
+
+                    <Spinner
+                        android:id="@+id/guprogenspn"
+                        android:layout_width="83dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:entries="@array/gen"
+                        tools:layout_editor_absoluteX="127dp"
+                        tools:layout_editor_absoluteY="346dp" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/guproadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Address"
+                    tools:layout_editor_absoluteY="385dp" />
+
+                <EditText
+                    android:id="@+id/gupropass"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Password"
+                    tools:layout_editor_absoluteY="412dp" />
+
+                <EditText
+                    android:id="@+id/guprorepass"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Re-enter Password"
+                    tools:layout_editor_absoluteY="444dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/guprocourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:text="COURSE"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="24dp"
+                        tools:layout_editor_absoluteY="475dp" />
+
+                    <Spinner
+                        android:id="@+id/guprocour"
+                        android:layout_width="82dp"
+                        android:layout_height="43dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:entries="@array/course"
+                        tools:layout_editor_absoluteX="138dp"
+                        tools:layout_editor_absoluteY="475dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/guprostream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:text="STREAM"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        tools:layout_editor_absoluteX="28dp"
+                        tools:layout_editor_absoluteY="527dp" />
+
+                    <Spinner
+                        android:id="@+id/guprostr"
+                        android:layout_width="82dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_corner_white"
+                        android:entries="@array/stream"
+                        tools:layout_editor_absoluteX="139dp"
+                        tools:layout_editor_absoluteY="531dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:text="Please select a security question and give the corresponding answer (case sensitive) "
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/guproseqsp"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+
+                    />
+
+                <EditText
+                    android:id="@+id/guproseq"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_corner_white"
+                    android:hint="Enter your answer (Case sensitive)" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+
+
+                        android:id="@+id/guproback"
+                        android:layout_width="137dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/round_button_3"
+                        android:text="BACK"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="629dp" />
+
+                    <Button
+                        android:id="@+id/guproupdate"
+                        android:layout_width="137dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/round_button_3"
+                        android:gravity="center"
+                        android:text="UPDATE"
+                        tools:layout_editor_absoluteX="224dp"
+                        tools:layout_editor_absoluteY="629dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

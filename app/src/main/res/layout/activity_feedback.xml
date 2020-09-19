@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guestwall"
+    android:orientation="vertical"
+    tools:context=".Feedback">
+
+
+    <ImageView
+        android:id="@+id/fdlogo"
+        android:layout_width="276dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/fdheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/logo_final" />
+
+    <TextView
+        android:id="@+id/fdheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Please share your feedback"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fdbid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/fdlogo"
+        app:layout_constraintTop_toBottomOf="@+id/fdlogo" />
+
+    <EditText
+        android:id="@+id/fdbid"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="Your Id"
+        app:layout_constraintBottom_toTopOf="@+id/fdbname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdheader" />
+
+    <EditText
+        android:id="@+id/fdbname"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="Your Name"
+        app:layout_constraintBottom_toTopOf="@+id/fdbtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdbid" />
+
+    <EditText
+        android:id="@+id/fdbtext"
+        android:layout_width="410dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_corner_white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter your feedback here:"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/fdbback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdbname" />
+
+    <Button
+        android:id="@+id/fdbback"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/round_button_3"
+        android:text="Back"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fdbsend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdbtext" />
+
+    <Button
+        android:id="@+id/fdbsend"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_button_3"
+        android:text="Send"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fdbback"
+        app:layout_constraintTop_toBottomOf="@+id/fdbtext"
+        app:layout_constraintVertical_bias="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

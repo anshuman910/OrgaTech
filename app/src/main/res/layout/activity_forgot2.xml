@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guestwall"
+    android:orientation="vertical"
+    tools:context=".forgot2">
+
+    <TextView
+        android:id="@+id/f2header1"
+        android:layout_width="259dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/rounded_corner_white"
+        android:text="Reset your password"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/f2header2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2logo" />
+
+    <TextView
+        android:id="@+id/f2header2"
+        android:layout_width="335dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/rounded_corner_white"
+        android:foregroundGravity="center"
+        android:text="    Please enter your credentials below: "
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/f2pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2header1" />
+
+    <EditText
+        android:id="@+id/f2pass"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/rounded_corner_white"
+        android:ems="10"
+
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/f2repass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2header2" />
+
+    <EditText
+        android:id="@+id/f2repass"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner_white"
+        android:ems="10"
+        android:hint="Retype your password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/f2submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2pass" />
+
+    <Button
+        android:id="@+id/f2submit"
+        android:layout_width="230dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_button_3"
+        android:text="SUBMIT"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/f2pog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2repass" />
+
+    <ImageView
+        android:id="@+id/f2logo"
+        android:layout_width="217dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/f2header1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/logo_final" />
+
+    <ProgressBar
+        android:id="@+id/f2pog"
+        style="@android:style/Widget.Material.Light.ProgressBar"
+        android:layout_width="119dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="8dp"
+        android:indeterminateTint="#009bb5"
+        android:progressTint="#2B2B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2submit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
